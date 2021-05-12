@@ -111,41 +111,48 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <form>
-                    <select style="border: none;" class="info-box">
-                        <option class="disable">Location</option>
-                        <option> Bashundhora </option>
-                        <option> Gulshan </option>
+                <form action="postproperty.php" method="post">
+                    <select style="border: none;" class="info-box" name="location">
+                        <option value="" class="disable">Location</option>
+                        <option value="B"> Bashundhara </option>
+                        <option value="G"> Gulshan </option>
+                        <option value="M"> Mohammadpur </option>
+                        <option value="Mi"> Mirpur </option>
+                        <option value="U"> Uttara </option>
+                        <option value="D"> Dhannmondi </option>
+                        <option value="P"> Puran dhaka </option>
+                        <option value="Ma"> Malibag </option>
+                        <option value="B"> Bosila </option>
                     </select>
                     <br> <br>
-                    <select style="border: none;" class="info-box">
-                        <option>Size</option>
-                        <option> 1450 Sft </option>
-                        <option> 2000 Sft </option>
+                    <select name="size" style="border: none;" class="info-box">
+                        <option value="">Size</option>
+                        <option value="1"> 1450 Sft </option>
+                        <option value="2"> 2000 Sft </option>
                     </select>
                     <br> <br>
-                    <select style="border: none;" class="info-box">
-                        <option>Floor</option>
-                        <option> 6th </option>
-                        <option> 5th </option>
+                    <select name="floor" style="border: none;" class="info-box">
+                        <option value="">Floor</option>
+                        <option value="6"> 6th </option>
+                        <option value="5"> 5th </option>
                     </select>
                     <br> <br>
-                    <select style="border: none;" class="info-box">
-                        <option>Bed</option>
-                        <option> 2 bed </option>
-                        <option> 3 bed </option>
+                    <select name="bed" style="border: none;" class="info-box">
+                        <option value="">Bed</option>
+                        <option value="b"> 2 bed </option>
+                        <option value="c"> 3 bed </option>
                     </select>
                     <br> <br>
-                    <select style="border: none;" class="info-box">
-                        <option>Bath</option>
-                        <option> 2 bath </option>
-                        <option> 3 bath </option>
+                    <select name="bath" style="border: none;" class="info-box">
+                        <option value="">Bath</option>
+                        <option value="2"> 2 bath </option>
+                        <option value="3"> 3 bath </option>
                     </select>
                     <br> <br>
-                    <select style="border: none;" class="info-box">
-                        <option>Price</option>
-                        <option> 5000000 </option>
-                        <option> 6000000 </option>
+                    <select name="price" style="border: none;" class="info-box">
+                        <option value="">Price</option>
+                        <option value="a"> 5000000 </option>
+                        <option value="b"> 6000000 </option>
                     </select>
                 </form>
             </div>
@@ -157,7 +164,7 @@
                     <label class="id" for="file">
                         <div class="card">
                             <div class="card-body">
-                                <input type="file" id="file" accept="image/*">
+                                <input type="file" name="image" id="file" accept="image/*">
                                 <img height="90px" width="90px" src="img/add.png" alt="">
                             </div>
                         </div>
@@ -168,8 +175,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div style="text-align: center;">
-                    <button style="background-color: #ff4040; border: none; height: 50px; width: 120px;" type="button"
-                        class="btn btn-success">Submit</button>
+                    <button style="background-color: #ff4040; border: none; height: 50px; width: 120px;" type="submit"
+                       name="submit" class="btn btn-success">Submit</button> 
                 </div>
             </div>
         </div>
