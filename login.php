@@ -1,6 +1,6 @@
 <?php 
 
-    include('Connection.php');
+ include('Connection.php'); 
 
     if(isset($_POST['submit'])){		  
         $email=$_POST['email'];
@@ -17,5 +17,7 @@
             echo "Login Failed..";
         }
 }
-mysqli_close($conn);
+
 ?>
+
+<?php include('db_close.php'); ?>
